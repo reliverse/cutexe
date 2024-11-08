@@ -1,0 +1,61 @@
+{
+  "name": "@reliverse/cutexe",
+  "version": "0.2.0",
+  "description": "Running commands in your scripts can now be an enjoyable, charming, and cute process. Embrace cutexe, not just child_process execution. This library is a great alternative to execa, tinyexec, etc.",
+  "scripts": {
+    "appts": "bun typecheck && bun lint && bun format",
+    "build": "unbuild && bun build.paths.ts",
+    "pub": "bun run build && bun publish",
+    "lint": "eslint --cache --fix .",
+    "format": "biome check --write .",
+    "dev": "bun vitest",
+    "knip": "knip"
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "paths": {
+    "~/*": ["./src/*"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reliverse/prompts.git"
+  },
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "module": "./dist/main.js",
+  "exports": {
+    "import": "./dist/main.js",
+    "types": "./dist/main.d.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/reliverse/prompts/issues",
+    "email": "blefnk@gmail.com"
+  },
+  "files": ["package.json", "README.md", "LICENSE.md", "dist"],
+  "homepage": "https://github.com/reliverse/prompts",
+  "keywords": ["cli", "reliverse"],
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^7.0.5",
+    "fs-extra": "^11.2.0",
+    "pathe": "^1.1.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@eslint/js": "^9.14.0",
+    "@types/bun": "^1.1.13",
+    "@types/cross-spawn": "^6.0.6",
+    "@types/eslint__js": "^8.42.3",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.14.0",
+    "eslint-plugin-perfectionist": "^3.9.1",
+    "knip": "^5.36.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.13.0",
+    "unbuild": "^2.0.0",
+    "vitest": "^2.1.4"
+  }
+}

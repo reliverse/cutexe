@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/*": ["./addons/*"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "module": "preserve",
+    "noEmit": true,
+    "lib": ["es2022"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "addons/**/*.ts",
+    "build.paths.ts",
+    "build.config.ts",
+    "eslint.config.js",
+    "vitest.config.ts"
+  ],
+  "exclude": ["dist", "node_modules"]
+}

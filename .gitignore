@@ -1,0 +1,6 @@
+dist/
+.DS_Store
+.eslintcache
+node_modules/
+addons/premium/
+addons/**/premium/
